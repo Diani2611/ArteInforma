@@ -1,0 +1,145 @@
+body{
+    background-color: #F5EFF4;
+    margin: 0;
+}    
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1rem 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    &__image{
+        width: 150px;
+
+    }
+    &__text{
+        font-size: 40px;
+        font-weight: bold;
+        span{
+            color: #da70f9;
+        }
+
+    }
+}
+
+.menu-wrapper{
+    display: flex;
+    align-items: center;
+}
+.menu{
+  width: 400px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+    &__item{
+      
+        
+        &--link{
+            color: black;
+            text-decoration: none;
+            &:hover{
+                color: #da70f9;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.search{
+    position: relative;
+    &__image{
+        width: 30px;
+        cursor: pointer;
+
+    }
+    &__box{
+        display: none;
+        position: absolute;
+        top: 0;
+        background-color: #fff;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        left: -420px;
+        width: 400px;
+        padding: 0.25rem;
+        & input {
+            width: 100%;
+        }
+    }
+}
+
+.information {
+    display: flex;
+    margin: 2rem 128px;
+    &__video{
+        width:50%;
+    }
+    &__text{
+        font-family: 'Quicksand', sans-serif;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2rem ;
+    }
+
+}
+
+.contact{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 4rem;
+    
+    &__maps, &__form{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__maps{
+      
+        height: 340px;
+        iframe{
+            border-radius: 10px;
+        }
+    }    
+
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__control{
+        margin: 0.5rem 0;
+        width: 300px;
+        padding: 0.8rem;
+        border-radius: 10px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    &__button{
+        margin-top: 0.5rem;
+        width: 150px;
+        padding: 0.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Quicksand', sans-serif;
+        
+        &:hover{
+            background-color: #92FCDE;
+            
+        }
+    }
+}
+
