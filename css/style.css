@@ -140,7 +140,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 2rem;
+  padding-right: 50px;
 }
 .contact {
   width: 1024px;
