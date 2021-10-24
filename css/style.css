@@ -126,13 +126,12 @@ header {
   padding-left: 2rem;
 }
 
-.descrition{
+.description{
   display: flex;
   margin: 2rem 128px;
 }
 .description__image{
   width: 50%;
-
 }
 
 .description__text {
