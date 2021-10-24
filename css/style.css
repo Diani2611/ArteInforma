@@ -126,8 +126,22 @@ header {
   padding-left: 2rem;
 }
 
-.infomartión__image{
+.descrition{
   display: flex;
+  margin: 2rem 128px;
+}
+.description__image{
+  width: 50%;
+
+}
+
+.description__text {
+  font-family: "Quicksand", sans-serif;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
 }
 .contact {
   width: 1024px;
