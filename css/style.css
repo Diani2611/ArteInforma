@@ -11,12 +11,7 @@ header {
   padding: 1rem 0;
 }
 
-@media screen and (max-width:538px) {
-  header{
-    width: 100%;
-  }
-  
-}
+
 
 
 .logo {
@@ -31,27 +26,14 @@ header {
   width: 150px;
 }
 
-@media screen and (max-width:538px) {
-  .logo__image{
-    width: 50px;
-    height: 50px;
-  }
-  
-  
-}
+
 
 .logo__text {
   font-size: 40px;
   font-weight: bold;
 }
 
-@media screen and (max-width:538px) {
-  .logo__text{
-    display: none;
-  }
-  
-  
-}
+
 
 .logo__text span {
   color: #da70f9;
@@ -71,11 +53,7 @@ header {
   margin: 0;
 }
 
-@media screen and (max-width:538px) {
-  .menu{
-    display:none;
-  }
-}
+
 .menu__item--link {
   color: black;
   text-decoration: none;
