@@ -38,13 +38,14 @@
             <iframe src="https://www.google.com/maps/d/embed?mid=1mWu8bUUt8atMmvjce-IiXTLZeVuh940L" width="450" height="300"></iframe>
           </div>
           <div class="contact__form">
-              <form action="mailto:diana.261111@gmail.com" class="form">
+              <form action="" class="form" id="form">
                   <input type="text" name="nombre" class="form__control" required="required" placeholder="Nombre"/>
                   <input type="email" name="correo" class="form__control" required="required" placeholder="Correo"/>
                   <input type="text" name="asunto" class="form__control" required="required" placeholder="Asunto"/>
                   <textarea name="mensaje" class="form__control" required="required" placeholder="Mensaje"></textarea>
                   <input type="submit" name="button" value="Enviar mensaje" class="form__button" />
               </form>
+              <a href="" id="trucazo"></a>
           </div>
       </section>
     </main>
@@ -61,6 +62,19 @@
         searchBox.style.display = searchBox.style.display == "none" ? "flex" : "none"
       }
       searchImage.addEventListener("click",handleClick)
+    </script>
+    <script>
+       const $form = document.querySelector('#form')
+       const $buttonMailto = document.querySelector('#trucazo')
+
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      $buttonMailto.setAttribute('href', `mailto:diana.261111@gmail.com?subject=nombre ${form.get('nombre')}  correo ${form.get('correo')} ${form.get('asunto')} &body=${form.get('mensaje')}`)
+      $buttonMailto.click()
+    }
     </script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f31b928f-a1a6-45c9-9454-f27caa6e4057";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>
