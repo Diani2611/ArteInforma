@@ -182,7 +182,13 @@ header {
   padding-left: 550px;
 }
 
-.about__image{
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;}
+
+.about__image {
   width: 50%;
 }
 
@@ -192,6 +198,4 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 2rem;
-  margin-right: 50px;
-}
+  padding-left: 2rem;}
