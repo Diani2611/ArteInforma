@@ -184,18 +184,16 @@ header {
 
 .about {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;}
-
+  margin: 2rem 128px;
+}
 .about__image {
   width: 50%;
 }
-
 .about__text {
   font-family: "Quicksand", sans-serif;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 2rem;}
+  padding-left: 2rem;
+}
