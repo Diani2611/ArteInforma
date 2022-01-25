@@ -188,9 +188,8 @@ header {
 }
 
 .about__image {
-  height: 340px;
   width: 50%;
-  flex-direction: column;
+  padding-top: 350px;
 }
 
 .about__text {
@@ -200,5 +199,6 @@ header {
   flex-direction: column;
   justify-content: center;
   padding-left: 2rem;
+  padding-top: 2rem;
   align-items: center;
 }
